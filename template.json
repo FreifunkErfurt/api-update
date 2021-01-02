@@ -1,0 +1,99 @@
+{
+    "name": "Freifunk Erfurt", 
+    "url": "https://erfurt.freifunk.net", 
+    "techDetails": {
+        "updatemode": [
+            "autoupdate"
+        ], 
+        "firmware": {
+            "url": "http://firmware.erfurt.freifunk.net", 
+            "docs": "https://technikkultur-erfurt.de/freifunk:firmware:start", 
+            "name": "Gluon", 
+            "vpnaccess": "mail"
+        }, 
+        "legals": [
+            "vpnnational", 
+            "vpninternational", 
+            "institutions"
+        ], 
+        "networks": {
+            "ipv4": [
+                {
+                    "network": "10.99.0.0/16"
+                }
+            ]
+        }, 
+        "routing": [
+            "batman-adv"
+        ]
+    }, 
+    "support": {
+        "club": {
+            "city": "Erfurt",
+            "name": "Verein zur F\u00F6rderung von Technikkultur in Erfurt e.V.",
+            "zip": "99085", 
+            "url": "https://technikultur-erfurt.de", 
+            "street": "Liebknechtstra\u00DFe 8", 
+            "email": "vorstand@technikkultur-erfurt.de"
+        }, 
+        "donations": {
+            "bankaccount": {
+                "usage": "Spende Freifunk", 
+                "IBAN": "DE67830654080004795199", 
+                "BIC": "GENODEF1SLR"
+            }
+        }
+    }, 
+    "contact": {
+        "ml": "freifunk@erfurt.freifunk.net", 
+        "twitter": "@FreifunkErfurt", 
+        "irc": "irc://irc.hackint.org/#ffef", 
+        "facebook": "https://www.facebook.com/pages/Freifunk-Erfurt/198276036854347?ref=hl", 
+        "email": "info@erfurt.freifunk.net"
+    }, 
+    "state": {
+        "nodes": 0, 
+        "lastchange": "2020-12-31T00:00:00Z", 
+        "focus": [
+            "infrastructure/backbone", 
+            "Public Free Wifi", 
+            "Social Community Building", 
+            "Free internet access"
+        ]
+    }, 
+    "api": "0.4.14", 
+    "location": {
+        "lat": 50.9828, 
+        "city": "Erfurt", 
+        "country": "DE", 
+        "lon": 11.0394, 
+        "address": {
+            "Street": "Liebknechtstra\u00dfe 8", 
+            "Name": "Bytespeicher", 
+            "Zipcode": "99085"
+        }
+    }, 
+    "services": [], 
+    "nodeMaps": [
+        {
+            "url": "https://map.erfurt.freifunk.net", 
+            "interval": "60", 
+            "technicalType": "meshviewer", 
+            "mapType": "list/status"
+        }
+    ], 
+    "feeds": [
+        {
+            "category": "ics", 
+            "url": "https://www.google.com/calendar/ical/rf5q98fcbko91vf886mnn72g6s%40group.calendar.google.com/public/basic.ics", 
+            "type": "ics", 
+            "name": "Kalender"
+        }, 
+        {
+            "category": "blog", 
+            "url": "https://erfurt.freifunk.net/feed/", 
+            "type": "rss", 
+            "name": "Blog"
+        }
+    ]
+}
