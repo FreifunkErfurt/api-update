@@ -49,7 +49,7 @@ update_api_file() {
   jq --ascii-output \
      --arg NODECOUNT "$__NODECOUNT" \
      --arg LASTCHANGE "$__LASTCHANGE" \
-     '.state.nodes = ($NODECOUNT|tonumberg) | .state.lastchange = $LASTCHANGE' \
+     '.state.nodes = ($NODECOUNT|tonumber) | .state.lastchange = $LASTCHANGE' \
      "$SCRIPT_PATH/$TEMPLATE" > "$OUTPUT.new"
 
   # Move new file to destination file
