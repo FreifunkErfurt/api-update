@@ -8,8 +8,8 @@
 # Copyright Freifunk Erfurt, 2021
 # Marcel Pennewiss <opensource@pennewiss.de>
 #
-# Version: 1.0
-# Last-Modified: 2021-01-02
+# Version: 1.1
+# Last-Modified: 2021-08-01
 #
 # REQUIREMENTS:
 #   * jq
@@ -19,6 +19,7 @@
 TEMPLATE="template.json"
 OUTPUT="/var/www/public_html/freifunk-api.json"
 MESHVIEWER_JSON_URL="https://map.erfurt.freifunk.net/meshviewer/data/meshviewer.json"
+TEMP_FILE=$(mktemp)
 
 # SCRIPT #######################################################
 
@@ -26,9 +27,6 @@ SCRIPT_PATH=$(realpath "$0" | sed 's|\(.*\)/.*|\1|')
 
 # Download meshviewer json file
 get_meshviewer_json() {
-
-  # Create temp file
-  TEMP_FILE=$(mktemp)
 
   # Get Meshviewer file
   $(which wget) --quiet $MESHVIEWER_JSON_URL -O "$TEMP_FILE" > /dev/null 2>&1
